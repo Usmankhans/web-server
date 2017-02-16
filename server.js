@@ -14,11 +14,11 @@ var middleware ={
 };
 app.use(middleware.logger);
 app.get('/about', function(req, res){
-res.send('its about us');
+res.send('its all about us');
 });
 
 app.use(express.static(__dirname + '/public'));
 
 app.listen(port,function(){
-	console.log('Server started baby at port '+ port);
+	console.log('Server started at port '+ port);
 });
